@@ -8,18 +8,29 @@
 </head>
 <body>
     <script>
-        'use strict';
-        let num;
-        num = prompt("Введите целое число: ");
-        switch (num){
-            case num%10:
-                alert("На ветке сидит {num} ворона");
-            break;
-            case num%100:
-                alert("На ветке сидит {num} вороны");
-            break;
-        }
-        
+      "use strict";
+    let lastDigit;
+    let num= prompt('Сколько птиц на ветке?');
+  lastDigit=num%10;
+if(lastDigit==1){
+  alert('На ветке сидит '+num+' ворона');}
+  else if(lastDigit==2 || lastDigit==3 ||lastDigit==4){
+    alert('На ветке сидит '+num+' вороны');
+  } else{ alert('На ветке сидит '+num+' ворон');}
+
+console.log(lastDigit);
+    switch(lastDigit){
+      case 1:
+        console.log('На ветке сидит '+num+' ворона');break;
+      case 2:
+      case 3:
+      case 4:
+        console.log('На ветке сидит '+num+' вороны');break;
+      default:
+        console.log('На ветке сидит '+num+' ворон');
+    }
+    
+
     </script>
 </body>
 </html>
