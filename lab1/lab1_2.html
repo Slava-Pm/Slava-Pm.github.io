@@ -8,11 +8,13 @@
     let lastDigit;
     let num= prompt('Сколько птиц на ветке?');
   lastDigit=num%10;
-if(lastDigit==1){
+if(lastDigit==11||lastDigit==12||lastDigit==13||lastDigit==14||lastDigit==15||lastDigit==16||lastDigit==17||lastDigit==18||lastDigit==19||lastDigit==20){
+    alert('На ветке сидит '+num+'ворон')
+    else if(lastDigit==1){
   alert('На ветке сидит '+num+' ворона');}
   else if(lastDigit==2 || lastDigit==3 ||lastDigit==4){
     alert('На ветке сидит '+num+' вороны');
-  } else{ alert('На ветке сидит '+num+' ворон');}
+  } else{ alert('На ветке сидит '+num+' ворон');}}
 
 console.log(lastDigit);
     switch(lastDigit){
