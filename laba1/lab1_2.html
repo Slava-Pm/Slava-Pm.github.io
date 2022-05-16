@@ -8,7 +8,7 @@
     let lastDigit;
     let num= prompt('Сколько птиц на ветке?');
   lastDigit=num%10;
-if(lastDigit==11||lastDigit==12||lastDigit==13||lastDigit==14||lastDigit==15){
+  if(((num%100)>10) && ((num%100)<15)){
     { 
       alert('На ветке сидит '+num+'ворон')
     }}
