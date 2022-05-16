@@ -36,8 +36,9 @@ function fib(n){
 function compare(x){ 
   let res=function(){
     let y=prompt('Введите число y');
-    if (y>x) return true
+    if (y>x) return compare('x') ('y') == true
       else if (y<x) return false
         else return null;
      }
+     return res();
   }
