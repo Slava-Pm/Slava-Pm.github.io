@@ -33,3 +33,11 @@ function fib(n){
         }
         return b;
       }
+function compare(x){ 
+  let res=function(){
+    let y=prompt('Введите число y');
+    if (y>x) return true
+      else if (y<x) return false
+        else return null;
+     }
+  }
