@@ -1,8 +1,9 @@
 'use strict';
+//Функция возводит основание х в степень n
 function pow(x,n){
   return x**n;  
 }
-
+//Функция,которая для данного натурального n вычисляет сумму чисел от 1 до n. 
 function sumTo(n){
   let sum=0;
   for(let i=1;i<=n;i++){
@@ -10,13 +11,14 @@ function sumTo(n){
   }
   return sum;
 }
-
+//Функция находит факториал введенного числа n
 function factorial(n){
  if(n>0)
    return (n*factorial(n-1));
    else 
      return 1;
   }
+  //Функция возвращает n-ое число Фибонначи
 function fib(n){
     return n <= 1 ? n : fib(n - 1) + fib(n - 2);   
 }  
