@@ -1,9 +1,20 @@
 'use strict';
-//Функция возводит основание х в степень n
+
+/**
+ * Функция возводит основание х в степень n 
+ * @param {number} x - основание 
+ * @param {number} n - степень
+ * @returns x**n
+ */
 function pow(x,n){
   return x**n;  
 }
 //Функция,которая для данного натурального n вычисляет сумму чисел от 1 до n. 
+/**
+ * 
+ * @param {number} n число
+ * @returns сумму чисел от 1 до n
+ */
 function sumTo(n){
   let sum=0;
   for(let i=1;i<=n;i++){
@@ -11,7 +22,12 @@ function sumTo(n){
   }
   return sum;
 }
-//Функция находит факториал введенного числа n
+
+/**
+ * Функция находит факториал введенного числа n
+ * @param {*} n 
+ * @returns 
+ */
 function factorial(n){
  if(n>0)
    return (n*factorial(n-1));
@@ -39,14 +55,13 @@ function fib(n){
 //Если значения равны, то возвращается null
 function compare(x)
 {
-    console.log(x);
     return function(y) {
         if (y > x){
-            console.log(x + " " + y);
             return true;}
         if (y < x){
-            console.log(x + " " + y);
             return false;}
         if (x === y)
             return null;
     }}
+
+    // pow(2, 3)
