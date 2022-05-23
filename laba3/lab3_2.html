@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            "use strict";
+
+            var str = "сын сходил в магазин";
+            console.log( ucFirst(str) );
+
+            str = "здравствуйте, я вернулся";
+            console.log( ucFirst(str) );
+
+            function ucFirst(str){
+                // делаем заглавный первый символ и конкатенируем с остальной строкой
+                return str.charAt(0).toUpperCase() + str.slice(1);
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
