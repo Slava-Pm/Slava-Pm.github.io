@@ -37,12 +37,16 @@ function fib(n){
 //Если y больше, чем x, то возвращается true
 //Если y меньше, чем x, то возвращается false
 //Если значения равны, то возвращается null
-function compare(x){ 
-  let res=function(){
-    let y=prompt('Введите число y');
-    if (y>x) return true
-      else if (y<x) return false
-        else return null;
-     }
-     return res();
-  }
+function compare(x)
+{
+    console.log(x);
+    return function(y) {
+        if (y > x){
+            console.log(x + " " + y);
+            return true;}
+        if (y < x){
+            console.log(x + " " + y);
+            return false;}
+        if (x === y)
+            return null;
+    }}

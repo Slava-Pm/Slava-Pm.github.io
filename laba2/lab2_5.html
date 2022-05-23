@@ -8,9 +8,13 @@
         <script src="lab2.js"></script>
 		<script>
 			'use strict';
-			let n=prompt("Введите число x");
-			let m=prompt("Введите число y");
-            alert(compare(n,m));
+			var x = prompt("Введи X для сравнения :");
+            x = parseInt(x);
+            var comp_x = compare(x);
+            var y = prompt("Введи Y для сравнения :");
+            y = parseInt(y);
+            alert ("Результат сравнения (" + x + " < " + y + "): " + comp_x(y));
+
 		</script>
 	</body>
 </html>
