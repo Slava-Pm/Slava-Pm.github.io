@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Форма</title>
+</head>
+<body>
+<form action="#">
+
+
+<!-- Кнопка для открытия модального -->
+<button onclick="document.getElementById('id01').style.display='block'">Регистрация</button>
+
+<!-- Модальный (содержит форму регистрации) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть модальный"></span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Форма регистрации пользователя</h1>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Введите вашу почту" name="email" required></br>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input type="password" placeholder="Введите пароль" name="psw" required></br>
+</br>
+Год рождения: <select name="sp" size="1">
+     <option>1997</option> 
+     <option>1998</option> 
+     <option>1999</option>
+     <option>2000</option>
+     <option>2001</option>
+     <option>2002</option> 
+     <option>2003</option>
+     <option>2004</option></optgroup>
+     
+     </select><br /></br>
+ Пол    <input type="radio" name="1k" /> мужчина
+     <input type="radio" name="2k" /> женщина </br></br>
+    
+<blockquote> <blockquote><label> <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Русский  </label></br></blockquote></blockquote>
+
+<blockquote> <blockquote><label> <input type="checkbox"  style="margin-bottom:15px"> Испанский  </label></br></blockquote> </blockquote>
+
+Я знаю:<tab><label> <input type="checkbox"  style="margin-bottom:15px"> Немецкий </label></br> 
+
+<blockquote> <blockquote> <label> <input type="checkbox" style="margin-bottom:15px"> Английский  </label></br> </blockquote> </blockquote>
+
+<blockquote> <blockquote> <label> <input type="checkbox"  style="margin-bottom:15px"> Китайский  </label></br></br></blockquote> </blockquote>
+
+ 
+ <div class="clearfix">
+       
+
+ Кратко о себе:<br />
+       <textarea name="description" style="width:100%" rows="14" ></textarea>
+      </div></br>
+
+     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Очистить</button>
+        <button type="submit" class="signup">Готово</button>
+</div> 
+</form>
+</body>
+</html>
