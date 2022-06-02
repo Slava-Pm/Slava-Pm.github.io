@@ -9,10 +9,10 @@
 <body>
     <script>
         'use strict';
-        let book1={};
-        book1.title = "Алгебра";
-        book1.pubYear = 1996;
-        book1.price = 75;
+        let book1 = {};
+                book1["title"] = "Преступление и Наказание";
+                book1["pubYear"] = 2018;
+                book1["price"] = 650;
         book1.show = function(){
             console.log(book1.title +" - "+ book1.price);
         }
@@ -22,12 +22,8 @@
         }
            
         
-        let book2={
-            title: "Уроки любви",
-            pubYear: 2001,
-            price: 69,
+        let book2 = { title: "Мастер и Маргарита", pubYear: 2005, price: 320,show: showBook };
             show: showBook
-        };
 
 
         book1.show();
