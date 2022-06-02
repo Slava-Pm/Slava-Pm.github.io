@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <script>
+            "use strict";
+
+            let obj = {
+                className: 'open menu'
+            }	
+
+            addClass(obj, "myClass");
+            console.log(obj.className);
+
+            addClass(obj, "yourClass");
+            console.log(obj.className);
+
+            addClass(obj, "myClass");
+            console.log(obj.className);
+
+            removeClass(obj, "yourClass");
+            console.log(obj.className);
+
+            removeClass(obj, "Class");
+            console.log(obj.className);
+
+            function addClass(obj, cls){
+                // добавляю пробелы, чтобы проверить вхождение
+                // иначе может случится, что название класса присутвует как часть названия другого
+                // например 'cl myClass' и 'myCl' 'Class'
+                var classList = " " + obj.className + " "; 
+
+                // добавляю только если еще нет такого в списке
+                if (classList.indexOf(" " + cls + " ") == -1){
+                    obj.className += " " + cls;
+                }
+            }
+
+            function removeClass(obj, cls){
+                var classList = " " + obj.className + " "; 
+
+                // удаляю только полное вхождение между проеблами
+                classList = classList.replace(" " + cls + " ", " ");
+                // и удаляю лишний пробел с начала и конца строки 
+                obj.className = classList.trim(" ");
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
