@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Задание 5</title>
+    </head>
+    <body>
+        <script>
+            "use strict";
+            let vasya = { name: "Вася", age: 23 };
+            let masha = { name: "Маша", age: 18 };
+            let vova = { name: "Вова", age: 12 };
+            let people = [ vasya , masha , vova ];
+            
+            let orig = people.slice();
+            console.log(orig);
+
+            //... ваш код ...
+            people.sort((a,b) => a.age - b.age);
+
+            // теперь people: [vova, masha, vasya]
+            console.log(people);
+        </script>
+    </body>
+</html>
