@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3</title>
+    <script src="lab3.js"></script>
+</head>
+<body>
+    <script>
+        "use strict";
+        function fib(n){
+        let a = 1n;
+        let b = 1n;
+        //Исключения
+        if (n==0) return 0;
+        if (n==1) return 1;
+        if (n==2) return 1;
+        for (let i = 3; i <= n; i++) {
+          let c = a + b;
+          a = b;
+          b = c;
+        }
+        return b;
+      }
+      function fibs(N) {
+    let a = [];
+    let str = '';
+    if (!Number.isNaN(N))
+        if (N == 0) str = 0;
+        else
+            for (let j = 0; j < N; ++j) {
+                a[j] = fib(n);
+                str += a[j] + ' ';
+            }
+    else str = NaN;
+        }
+    return str;
+        console.log(fibs(N));
+    </script>
+</body>
+</html>
