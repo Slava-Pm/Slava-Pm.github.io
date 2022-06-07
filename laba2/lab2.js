@@ -74,7 +74,6 @@ function compare(x)
             return null;
     }}
 
-    pow(2, 3)
 /**
  * 
  * @param {number} num - число
