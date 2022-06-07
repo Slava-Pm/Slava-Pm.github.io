@@ -35,6 +35,11 @@ function factorial(n){
      return 1;
   }
   //Функция возвращает n-ое число Фибонначи
+  /**
+   * 
+   * @param {number} n - число
+   * @returns 
+   */
 function fib(n){
         let a = 1n;
         let b = 1n;
@@ -53,6 +58,11 @@ function fib(n){
 //Если y больше, чем x, то возвращается true
 //Если y меньше, чем x, то возвращается false
 //Если значения равны, то возвращается null
+/**
+ * 
+ * @param {number} x - число
+ * @returns {}
+ */
 function compare(x)
 {
     return function(y) {
@@ -64,4 +74,4 @@ function compare(x)
             return null;
     }}
 
-    // pow(2, 3)
+    pow(2, 3)
