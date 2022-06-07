@@ -10,7 +10,22 @@
 <body>
     <script>
         "use strict";
+        function fibs(N) {
+    let a = [];
+    let str = '';
+    if (!Number.isNaN(N))
+        if (N == 0) str = 0;
+        else
+            for (let n = 0; n < N; ++n) {
+                a[n] = fib(n);
+                str += a[n] + ' ';
+            }
+    else str = NaN;
+        }
+    return str;
+    
         let N = +prompt("Введите N:");
+
         function fib(n){
         let a = 1n;
         let b = 1n;
@@ -25,19 +40,7 @@
         }
         return b;
       }
-      function fibs(N) {
-    let a = [];
-    let str = '';
-    if (!Number.isNaN(N))
-        if (N == 0) str = 0;
-        else
-            for (let n = 0; n < N; ++n) {
-                a[n] = fib(n);
-                str += a[n] + ' ';
-            }
-    else str = NaN;
-        }
-    return str;
+      
         console.log(fibs(N));
     </script>
 </body>
