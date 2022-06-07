@@ -10,37 +10,36 @@
 <body>
     <script>
         "use strict";
+        let N = +prompt("Введите N:");
         function fibs(N) {
     let a = [];
     let str = '';
     if (!Number.isNaN(N))
         if (N == 0) str = 0;
         else
-            for (let n = 0; n < N; ++n) {
-                a[n] = fib(n);
-                str += a[n] + ' ';
+            for (let p = 0; p < N; ++p) {
+                a[p] = fib(p);
+                str += a[p] + ' ';
             }
     else str = NaN;
-        }
+        
     return str;
-    
-        let N = +prompt("Введите N:");
 
-        function fib(n){
+        function fib(p){
         let a = 1n;
         let b = 1n;
         //Исключения
-        if (n==0) return 0;
-        if (n==1) return 1;
-        if (n==2) return 1;
-        for (let i = 3; i <= n; i++) {
+        if (p==0) return 0;
+        if (p==1) return 1;
+        if (p==2) return 1;
+        for (let i = 3; i <= p; i++) {
           let c = a + b;
           a = b;
           b = c;
         }
         return b;
       }
-      
+    }
         console.log(fibs(N));
     </script>
 </body>
