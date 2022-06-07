@@ -14,7 +14,7 @@
                 book1["pubYear"] = 1909;
                 book1["price"] = 900;
         book1.show = function(){
-            console.log(book1.title +" - "+ book1.price);
+            console.log(this.title +" - "+ this.price);
         }
 
         function showBook(){
@@ -22,7 +22,11 @@
         }
            
         
-        let book2 = { title: "Граф Монте-Кристо", pubYear: 1844, price: 1200,show: showBook };
+        let book2 = { 
+            title: "Граф Монте-Кристо", 
+            pubYear: 1844, price: 1200,
+            show: showBook 
+        };
             show: showBook
 
 
