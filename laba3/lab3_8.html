@@ -9,6 +9,15 @@
 <body>
     <script>
         'use strict'
+        function sum() {
+    let result = 0;
+
+    for (let i = 0; i < arguments.length; i++) {
+        result += arguments[i];
+    }
+
+    return result;
+}
         console.log("sum() = ",sum());
         console.log("sum(1) = ",sum(1));
         console.log("sum(1,2) = ",sum(1,2));
