@@ -19,20 +19,19 @@
 
 		document.addEventListener("keydown", function (event) {
 
-		
-				if ((event.ctrlKey || event.metaKey) && event.code === "KeyE") {
-					event.preventDefault();
-					var di = document.querySelector('div');
-					di.outerHTML = '<textarea>' + di.innerHTML + '</textarea>'
-				} else if ((event.ctrlKey || event.metaKey) && event.code === "KeyS") {
-					event.preventDefault();
-					var di = document.querySelector('textarea');
-					di.outerHTML = '<div>' + di.value + '</div>'
-				} else if (event.code === "Escape") {
-					event.preventDefault();
-					var di = document.querySelector('textarea');
-					di.outerHTML = '<div>' + di.innerHTML + '</div>'
-				};
+			if ((event.ctrlKey || event.metaKey) && event.code === "KeyE") {
+				event.preventDefault();
+				var di = document.querySelector('div');
+				di.outerHTML = '<textarea>' + di.innerHTML + '</textarea>'
+			} else if ((event.ctrlKey || event.metaKey) && event.code === "KeyS") {
+				event.preventDefault();
+				var di = document.querySelector('textarea');
+				di.outerHTML = '<div>' + di.value + '</div>'
+			} else if (event.code === "Escape") {
+				event.preventDefault();
+				var di = document.querySelector('textarea');
+				di.outerHTML = '<div>' + di.innerHTML + '</div>'
+			};
 		});
 	</script>
 </body>
