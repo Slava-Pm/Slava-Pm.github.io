@@ -53,8 +53,8 @@ function camelize(str) {
 }
 /**
  * 
- * @param {array} N - массив
- * @returns 
+ * @param {number} N - число элементов в массиве
+ * @returns - элементы массива
  */
 function fibs(N) {
     let a = [];
