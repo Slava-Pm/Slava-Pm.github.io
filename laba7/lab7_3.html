@@ -19,7 +19,7 @@
 
 		document.addEventListener("keydown", function (event) {
 
-			try {
+		
 				if ((event.ctrlKey || event.metaKey) && event.code === "KeyE") {
 					event.preventDefault();
 					var di = document.querySelector('div');
@@ -32,10 +32,7 @@
 					event.preventDefault();
 					var di = document.querySelector('textarea');
 					di.outerHTML = '<div>' + di.innerHTML + '</div>'
-				}
-			} catch (err) {
-
-			};
+				};
 		});
 	</script>
 </body>
