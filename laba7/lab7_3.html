@@ -15,7 +15,7 @@
 
 	<script>
 		'use strrict';
-		var tf = document.getElementById("texfield");
+		let tf = document.getElementById("texfield");
 
 		document.addEventListener("keydown", function (event) {
 
@@ -25,11 +25,11 @@
 				di.outerHTML = '<textarea>' + di.innerHTML + '</textarea>'
 			} else if ((event.ctrlKey || event.metaKey) && event.code === "KeyS") {
 				event.preventDefault();
-				var di = document.querySelector('textarea');
+				let di = document.querySelector('textarea');
 				di.outerHTML = '<div>' + di.value + '</div>'
 			} else if (event.code === "Escape") {
 				event.preventDefault();
-				var di = document.querySelector('textarea');
+				let di = document.querySelector('textarea');
 				di.outerHTML = '<div>' + di.innerHTML + '</div>'
 			};
 		});
