@@ -5,41 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задание 6</title>
+    <script src="lab3.js"></script>
     
 </head>
 <body>
     <script>
         "use strict";
         let N = +prompt("Введите N:");
-        function fibs(N) {
-    let a = [];
-    let str = '';
-    if (!Number.isNaN(N))
-        if (N == 0) str = 0;
-        else
-            for (let p = 0; p < N; ++p) {
-                a[p] = fib(p);
-                str += a[p] + ' ';
-            }
-    else str = NaN;
-        
-    return str;
-
-        function fib(p){
-        let a = 1n;
-        let b = 1n;
-        //Исключения
-        if (p==0) return 0;
-        if (p==1) return 1;
-        if (p==2) return 1;
-        for (let i = 3; i <= p; i++) {
-          let c = a + b;
-          a = b;
-          b = c;
-        }
-        return b;
-      }
-    }
         console.log(fibs(N));
     </script>
 </body>
