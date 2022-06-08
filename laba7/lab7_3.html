@@ -21,7 +21,7 @@
 
 			if ((event.ctrlKey || event.metaKey) && event.code === "KeyE") {
 				event.preventDefault();
-				var di = document.querySelector('div');
+				let di = document.querySelector('div');
 				di.outerHTML = '<textarea>' + di.innerHTML + '</textarea>'
 			} else if ((event.ctrlKey || event.metaKey) && event.code === "KeyS") {
 				event.preventDefault();
