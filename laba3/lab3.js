@@ -59,7 +59,7 @@ function camelize(str) {
  */
 function fibs(t) {
             let arr = [];
-            for (var p = 0; p <= t; p++) {
+            for (var p = 0; p < t; p++) {
                arr.push(fib(p));
             }
             return arr;
