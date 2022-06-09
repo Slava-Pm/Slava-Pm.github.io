@@ -54,21 +54,16 @@ function camelize(str) {
 /**
  * 
  * @param {number} N - число элементов в массиве
+ 
  * @returns - элементы массива
  */
-function fibs(N) {
-    let a = [];
-    let array = [];
-    if (!Number.isNaN(N))
-        if (N == 0) array = 0;
-        else
-            for (let p = 0; p < N; ++p) {
-                a[p] = fib(p);
-                array += a[p] + ' ';
+function fibs(t) {
+            let arr = [];
+            for (var p = 0; p <= t; p++) {
+               arr.push(fib(p));
             }
-    else array = NaN;
-
-    return array;
+            return arr;
+        }
 
     function fib(p) {
         let a = 1n;
@@ -84,7 +79,6 @@ function fibs(N) {
         }
         return b;
     }
-}
 /**
  * 
  * @returns - сумма всех аргументов
