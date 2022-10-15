@@ -1,4 +1,3 @@
-import math 
 from random import randint
 A = (int(input('Введите А: ')))
 B = (int(input('Введите В: ')))
