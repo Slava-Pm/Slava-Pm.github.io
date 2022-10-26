@@ -1,3 +1,5 @@
+#Даны три числа, не используя функции min и max, упорядочить их по убыванию.
+
 print("Введите три числа")
 a, b, c = map(float,input().split())
 if (a>b and a>c and c>b) or (a==c and a>b):
