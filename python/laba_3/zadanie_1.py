@@ -4,14 +4,14 @@
 
 import math
 n = int(input('Введите число:'))
+counter = 0
 flag = True
 if (n%2==0):
     flag = False
-if n > 0:
-    digits = int(math.log10(n))+1
-elif n == 0:
-    digits = 1
-else:
-    digits = int(math.log10(-n))+1
-print('Цифр в числе:',digits)
+
+while n > 0:
+    n = n // 10
+    counter += 1
+
+print('Цифр в числе:',counter)
 print(flag)
