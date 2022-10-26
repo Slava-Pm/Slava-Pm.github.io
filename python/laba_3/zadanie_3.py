@@ -9,10 +9,12 @@ N = (int(input('Количество слагаемых для каждого а
 x1,x2 = map(int,input('Введите интервал значений х ').split())
 m = (int(input("Введите кол-во точек табуляции ")))
 k=0
-s=0
 h=(x2-x1)/m
 while x2 >= x1:
+    s=0
     for k in range(0,N+1):
-        s=s+(x1**(2*k))/(math.factorial(2*k))
-    print(format(x1,'.3f'),'-',format(s,'.3f'))
+        fact = math.factorial(2 * k)
+        Pow = x1 ** (2 * k)
+        s+= Pow/fact 
+    print(format(x1,'.3f'),'-',format(s,'.3f'),'-',format(fact,'.3f'),'-',format(Pow,'.3f'))
     x1 += h
