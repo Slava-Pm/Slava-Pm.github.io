@@ -5,11 +5,11 @@ A = int(input("Введите число А "))
 B = int(input("Введите число B "))
 
 for i in range(A,B):
-    temp = str(i)
+    t = str(i)
     flag = True
-    for j in range(len(temp) // 2):
-        if temp[j] != temp[len(temp) - j - 1]:
+    for j in range(len(t) // 2):
+        if t[j] != t[len(t) - j - 1]:
             flag = False
             continue
     if flag:
-        print('this is paly!',i)
+        print(i)
