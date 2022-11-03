@@ -5,16 +5,17 @@
 x1)/m, где m – количество точек табуляции переменной  x.'''
 
 import math
-N = (int(input('Количество слагаемых для каждого аргумента х ')))
+
 x1,x2 = map(int,input('Введите интервал значений х ').split())
 m = (int(input("Введите кол-во точек табуляции ")))
-k=0
-h=(x2-x1)/m
-while x2 >= x1:
+
+i = x1
+while i <= x2:
+    N = (int(input('Количество слагаемых для каждого аргумента х ')))
     s=0
-    for k in range(0,N+1):
-        fact = math.factorial(2 * k)
-        Pow = x1 ** (2 * k)
+    for k in range(N+1):
+        fact = math.factorial(2*k)
+        Pow = i**(2*k)
         s+= Pow/fact 
     print(format(x1,'.3f'),'-',format(s,'.3f'),'-',format(fact,'.3f'),'-',format(Pow,'.3f'))
-    x1 += h
+    i +=(x2-x1)/m
