@@ -1,4 +1,4 @@
-'''В одномерном массиве, состоящем из п целых элементов удалить 
+'''В одномерном массиве, состоящем из п целых элементов удалить
 все отрицательные элементы.'''
 
 n = int(input())
@@ -8,10 +8,8 @@ for i in range(n):
     arr.append(int(input()))
 
 i = 0
-d = [] 
+d = []
 for i in range(n):
-    if arr[i] < 0:
-        d.append(i)
-for i in range(len(d)):
-    del arr[d[i]]
-print(*arr)
+    if arr[i] >= 0:
+        d.append(arr[i])
+print(d)
