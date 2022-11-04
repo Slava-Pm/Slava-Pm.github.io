@@ -8,10 +8,14 @@ for i in range(n):
 value = int(input())
 mint = min(arr)
 k = 0
+i = 0
 for i in range(n):
     if arr[i] == mint:
         k +=1
-for i in range(n+k):
+i = 0
+while i < n+k:
     if arr[i] == mint:
         arr.insert(i+1,value)
+        i += 1
+    i += 1
 print(arr)
