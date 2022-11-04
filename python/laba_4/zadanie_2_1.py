@@ -8,10 +8,10 @@ for i in range(n):
     arr.append(int(input()))
 
 i = 0
-delarr = []  # массив индексов по которым в arr надо удалить элементы
+d = [] 
 for i in range(n):
     if arr[i] < 0:
-        delarr.append(i)
-for i in range(len(delarr)):
-    del arr[delarr[i]]
+        d.append(i)
+for i in range(len(d)):
+    del arr[d[i]]
 print(*arr)
