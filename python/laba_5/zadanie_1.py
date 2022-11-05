@@ -1,4 +1,5 @@
 
+
 '''Для заданной целочисленной матрицы A(N, M) определите
 сумму и количество элементов матрицы, кратных некоторому
 числу a.
@@ -22,11 +23,19 @@ for i in range(n):
         print(mat[i][j], end=" ")
     print()
 k = 0
-summa = 0
+sum = 0
+
 a = int(input('Введите число a - '))
 for i in range(n):
     for j in range(m):
-        if mat[i][j] % a == 0:
+        if mat[i][j] % a == 0 and mat[i][j] != 0:
             sum += mat[i][j]
             k += 1
-
+print("Сумма элементов, кратных числу ",a,"= ",sum,"Кол-во таких элементов - ",k)
+sumnechet = 0
+for i in range(n):
+    for j in range(m):
+        if mat[i][j] < 0:
+            for i in range(n):
+                sumnechet += mat[i][j]
+        print("Cумма нечетных элементов",sumnechet)
