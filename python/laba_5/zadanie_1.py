@@ -36,3 +36,36 @@ for j in range(m):
         if mat[i][j] < 0:
             sumnechet += mat[i][j]
     print("Cумма нечетных элементов",sumnechet)
+
+'''Дана квадратная матрица A(N, N) целых чисел. Найти сумму S1
+элементов в последнем столбце матрицы. Определить количество
+элементов под побочной  диагональю матрицы, значения
+которых больше S1.'''
+
+print('Введите размер квадратной матрицы')
+N = int(input())
+
+mat1 = [0] * N
+for i in range(N):
+    mat1[i] = [0] * N
+
+for i in range(N):
+    for j in range(N):
+        mat1[i][j] = int(input())
+
+s1 = 0
+for i in range(N):
+    s1 += mat1[i][N-1]
+print("сумма элементов",s1)
+count = 0
+for i in range(N):
+    for j in range(N):
+        if mat1[i][j] > s1 and i > N-j-1:
+            count += 1
+
+print("Наша матрица:")
+for i in range(N):
+    for j in range(N):
+        print(mat1[i][j], end=" ")
+    print()
+print('Искомое количество элементов', count)
