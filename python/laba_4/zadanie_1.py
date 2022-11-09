@@ -5,8 +5,8 @@
 '''
 n = (int(input()))
 a=[]
-for _ in range(n):
-    a.append(int(input("Заполните массив ")))
+for i in range(n):
+    a[i] = (int(input("Введите значение ")))
 count1 = 0
 count2 = 0
 count3 = 0
