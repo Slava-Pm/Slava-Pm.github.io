@@ -1,15 +1,13 @@
-'''type letters = set of 'a'..'z';
-Описать процедуру print(А), печатающую в алфавитном порядке все элементы множества А, имеющего тип letters.Составить, программу, использующую эту процедуру.'''
+"""
+Задача 2 type natur = 1..maxint;
+Описать функцию digits(n) подсчитывающую количество различных 
+(значащих) цифр в десятичной записи натурального числа n. Составить 
+программу, использующую эту функцию.
+"""
 
-def letters(str):
-    alf = "abcdefghijklmnopqrstuvwxyz"
-    alf = sorted(set(list(alf)))
-    str = set(list(str))
-    outset = set()
-    for i in str:
-        if i in alf:
-            outset.add(i)
-    return sorted(outset)
+n = int(input())
 
-s = input('Введите строку: ')
-print(letters(s))
+def digits(num):
+    return len(set(str(num)))
+
+print(digits(n))
