@@ -13,7 +13,7 @@ for c in s:
         arr.append("")
     else:
         arr.append(c)
-word = "".join(arr)
+word = "".join(arr) # преобразование списка в строку
 print(word, "Кол-во входов М и Н - ", k)
 
 d = input()
