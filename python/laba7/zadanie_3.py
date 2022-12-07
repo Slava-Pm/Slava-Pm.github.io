@@ -3,11 +3,11 @@
 которые встречаются во втором слове
 """
 
-s, w = input(), input()
-
+s = input('Введите  1 - ')
+w = input('Введите  2 - ')
 S = set(s)
 W = set(w)
 
 for char in s:
     if char not in W:
-        print(char, end="")
+        print(char,end="")
