@@ -8,9 +8,12 @@ arr = input().split()
 
 length = len(arr)
 count = 0
+sum = 0
 for i in range(length):
     if int(arr[i]) % 3 == 0:
         count += 1
+        sum = sum + int(arr[i])
 
 print("Кол-во слов в строке - ", length)
-print("Кол-во цифр которые деляться на 5 - ", count)
+print("Кол-во цифр которые деляться на 3 - ", count)
+print("Сумма чисел - ", sum)
