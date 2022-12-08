@@ -8,6 +8,6 @@
 n = int(input())
 
 def digits(num):
-    return len(set(str(num)))
+    return len(set(str(num))) #набор только уникальных элементов
 
 print(digits(n))
